@@ -1,0 +1,33 @@
+.gridContainer{
+    display: grid;
+    grid-auto-rows: minmax(43px, auto);
+    grid-template-columns: 1fr; /* Set the column width based on content */
+    grid-gap: 10px;
+
+    border: 1px solid rgb(43, 42, 42);
+
+    justify-items: start; /* Align items to the end (right side) of the container */
+    width: 594px;
+    position: fixed;
+    left: -0.04%;
+    top: -0.06%;
+}
+
+.gridContainer button {
+    margin-left: 370px;
+    margin-right: 60px;
+    font-size: 22px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    transition: background-color 0.5s ease; /* Corrected transition property */
+}
+
+.gridContainer button:hover {
+    background-color: rgb(43, 42, 42);
+
+}
+
