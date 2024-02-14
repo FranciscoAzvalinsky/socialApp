@@ -1,7 +1,7 @@
 {
     "name": "packaje.json",
     "version": "1.0.0",
-    "description": "Weather App",
+    "description": "socialApp",
     "main": "index.js",
     "scripts": {
       "test": "test",

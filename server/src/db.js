@@ -32,8 +32,11 @@ const capsEntries = entries.map((entry) => [
 sequelize.models = Object.fromEntries(capsEntries);
 
 const {
-    
+    User,
+    Post
 } = sequelize.models
+
+Post.belongsTo(User);
 
 module.exports = {
     ...sequelize.models,

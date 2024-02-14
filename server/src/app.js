@@ -12,7 +12,7 @@ configureMiddleware(server)
 
 server.use(express.json());
 
-server.use("/WeatherApp", routes);
+server.use("/socialApp", routes);
 server.use(errorMiddleware);
 
 module.exports = server;

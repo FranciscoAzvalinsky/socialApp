@@ -1,0 +1,53 @@
+.gridContainer{
+    display: grid;
+    grid-auto-rows: minmax(43px, auto);
+    grid-template-columns: 1fr; /* Set the column width based on content */
+    grid-gap: 10px;
+
+    border: 1px solid rgb(43, 42, 42);
+    justify-items: start; /* Align items to the end (right side) of the container */
+    width: 594px;
+
+    position: fixed;
+    margin-left: 1193px;
+    top: -0.06%;
+}
+
+.buscador{
+    margin-left: 30px;
+    margin-top: 5px;
+    width: 344px;
+    height: 39px;
+    border-radius: 30px;
+    background-color: rgb(43, 42, 42);
+    border: 1px solid rgb(43, 42, 42);
+}
+
+.premiumContainer{
+    margin-left: 30px;
+    margin-top: 5px;
+    width: 344px;
+    border-radius: 10px;
+    height: 165px;
+    background-color: rgb(43, 42, 42);
+    border: 1px solid rgb(43, 42, 42);
+    color: white;
+}
+
+.premiumContainer h2{
+    justify-self: baseline;
+    align-items: baseline;
+    justify-items: baseline;
+}
+
+.premiumContainer span{
+    justify-self: baseline;
+    align-items: baseline;
+    justify-items: baseline;
+}
+
+.premiumContainer button{
+    justify-self: baseline;
+    align-items: baseline;
+    justify-items: baseline;
+}
