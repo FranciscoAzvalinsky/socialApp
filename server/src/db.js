@@ -33,7 +33,9 @@ sequelize.models = Object.fromEntries(capsEntries);
 
 const {
     User,
-    Post
+    Post,
+    Like,
+    Share,
 } = sequelize.models
 
 Post.belongsTo(User);

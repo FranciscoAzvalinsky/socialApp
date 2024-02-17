@@ -26,7 +26,7 @@ module.exports = (sequelize) => {
         allowNull: false,
       },
       phoneNumber: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.BIGINT,
         allowNull: false,
       },
       nationality:{
@@ -39,7 +39,7 @@ module.exports = (sequelize) => {
       },
       profilePicture:{
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
       },
       email: {
         type: DataTypes.STRING,
@@ -49,6 +49,10 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
         allowNull: false,
       },
+      premium: {
+        type: DataTypes.BOOLEAN,
+        defaultValue: false,
+      }
     },
     {
       timestamps: false,

@@ -6,7 +6,7 @@ const startServer = async () => {
 
     let port = 3001
   try {
-    await conn.sync({ force: true });
+    await conn.sync({ alter: true });
     server.listen(port, () => {
       console.log(`Server is listening at port ${port} : `);
 
