@@ -4,6 +4,9 @@ import NavbarRow from '../Navbars/NavbarRow/NavbarRow'
 import NavbarRight from '../Navbars/NavbarRight/NavbarRight'
 
 export default function Wall () {
+
+    //let user = localStorage.getItem('user');
+    
     return (
     <div /*className={style.wallContainer}*/>
         <NavbarRow></NavbarRow>

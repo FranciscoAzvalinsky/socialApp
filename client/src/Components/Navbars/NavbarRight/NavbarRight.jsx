@@ -1,4 +1,5 @@
 import style from './NavbarRight.module.css';
+import SubscribeButton from '../../Buttons/SubscribeButton/SubscribeButton';
 
 export default function NavbarRight () {
     return (
@@ -9,7 +10,7 @@ export default function NavbarRight () {
                 <span>Suscríbete para desbloquear nuevas funciones y, si eres elegible, 
                     recibir un pago de cuota de ingresos por anuncios.
                 </span>
-                <button>Suscribirse</button>
+                <SubscribeButton/>
             </div>
         </div>
     )

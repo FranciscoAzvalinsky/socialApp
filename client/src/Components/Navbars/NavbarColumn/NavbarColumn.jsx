@@ -1,4 +1,5 @@
 import style from './NavbarColumn.module.css'
+import ProfileButton from '../../Buttons/ProfileButton/ProfileButton'
 
 export default function NavbarColumn () {
     return (
@@ -15,6 +16,6 @@ export default function NavbarColumn () {
         <button>Perfil</button>
         <button>Más opciones</button>
         <button>Postear</button>
-        <button>Perfil</button>
+        <ProfileButton></ProfileButton>
     </div>)
 }

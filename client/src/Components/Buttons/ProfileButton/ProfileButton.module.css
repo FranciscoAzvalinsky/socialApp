@@ -1,0 +1,49 @@
+
+.profileButton{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: minmax(15px, auto);
+    margin-left: 370px;
+    margin-right: 60px;
+    font-size: 22px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    width: 36.8%;
+    height:45%;
+    margin-top: 50px;
+    transition: background-color 0.5s ease;
+}
+
+.profileButton:hover {
+    background-color: rgb(43, 42, 42);
+}
+
+.image{
+    height: 80%;
+    grid-column: 1;
+    grid-row: 1/4;
+    align-self: center;
+}
+
+.profileName{
+    font-size: 12px;
+    font-weight: lighter;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+}
+
+.username{
+    font-size: 11px;
+    font-weight: lighter;
+    opacity: 0.8;
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+
+}
+
