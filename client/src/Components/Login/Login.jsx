@@ -1,6 +1,6 @@
 import style from './Login.module.css';
 import { useNavigate } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import axios from 'axios'
 import { URL } from '../../config';
 
@@ -22,10 +22,14 @@ export default function Login() {
     async function handleLogin(e){
         e.preventDefault();
         let log = await fetchLogin();
+
         if (log.valid){
-            history('/wall')
-            localStorage.setItem('user', JSON.stringify(log.user))
             console.log(log);
+            localStorage.setItem('token', log.token)
+            if (localStorage.getItem('')){
+
+            }
+            history('/wall')
         } else {
             if (log.status === 203){
                 setError(log.message)
@@ -45,7 +49,7 @@ export default function Login() {
             email: userData.email, password: userData.password
         });
         if (response.status===200){
-            return {valid: true, user: response.data.user};
+            return {valid: true, token: response.data.user};
         }
         else if (response.status===203 || response.status===202){
             console.log(response)

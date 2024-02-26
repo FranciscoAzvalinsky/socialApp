@@ -9,10 +9,12 @@ const { PostUnlike } = require('../controllers/Post/PostUnlike');
 const { PostShare } = require('../controllers/Post/PostShare');
 const { PostUnshare } = require('../controllers/Post/PostUnshare');
 const { PostLogin } = require('../controllers/Post/PostLogin');
+const { GetProfile } = require('../controllers/Get/GetProfile');
 
 //rutas
 
 //get
+router.get('/profile', GetProfile)
 
 //post
 router.post('/post', PostPost)
